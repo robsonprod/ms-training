@@ -28,4 +28,8 @@ public class User implements Serializable {
 
     @Column(name = "daily_in_come")
     private Double dailyInCome;
+
+    public String test(){
+        return "Hello test";
+    }
 }
