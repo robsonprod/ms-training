@@ -5,12 +5,14 @@ import com.ponto.payment.dto.UserDTO;
 import com.ponto.payment.entities.Payment;
 import org.jvnet.hk2.annotations.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @Service
+@Component
 public class PaymentService {
 
     private static final String host = "localhost:8001/";
